@@ -1,11 +1,19 @@
-body {
+/* body {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace !important;
-}
+} */
 
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.heading__primary {
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
 }
 
 .self-typed {
@@ -13,10 +21,11 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
 }
-
+.project {
+  margin-top: 2rem;
+}
 .project__item {
   padding: 1rem;
-  background-color: #f9f9f9;
   margin-bottom: 1rem;
   border-radius: 3px;
   transition: 0.3s;
@@ -26,13 +35,20 @@ body {
   margin-right: 1rem;
 }
 .project__item:hover {
-  background-color: #f1f1f1;
+  background-color: rgb(246, 247, 249);
   transform: translateY(-5px);
   box-shadow: 0px 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 .project__item img {
   margin-bottom: 1rem;
   border-radius: 3px;
+}
+
+.project__item a {
+  color: #111;
+}
+.project__item:hover a {
+  text-decoration: none;
 }
 @media (max-width: 768px) {
   .container {
