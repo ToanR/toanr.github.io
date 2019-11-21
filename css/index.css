@@ -8,17 +8,11 @@
 }
 
 .header__img {
-  background-image: url(../img/artwork-02.jpg);
+  background-image: url(../img/Image-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 265px;
   width: 100%;
-}
-
-@media (max-width: 768px) {
-  .header__img {
-  }
-  /* .header__text {
-    color: white;
-  } */
+  background-position: center;
+  transition: all 1s;
 }
