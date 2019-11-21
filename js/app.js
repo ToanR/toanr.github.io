@@ -23,4 +23,4 @@ function run(interval, frames) {
   var swap = window.setInterval(func, interval);
 }
 
-run(5000, 5);
+run(10000, 3);
