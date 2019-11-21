@@ -1,16 +1,23 @@
-function run(interval, frames) {
-  var int = 1;
+function run(interval) {
+  var int = 0;
+  var increase = true;
   var headerImg = document.querySelector(".header__img");
-
   function func() {
-    headerImg.style.backgroundImage = `url('../img/image-${int}.jpg')`;
-
-    int++;
-    if (int === frames) {
-      int = 1;
+    console.log(int);
+    headerImg.style.filter = `saturate(${int}%)`;
+    if (increase) {
+      int += 50;
+    } else {
+      int -= 50;
+    }
+    if (int === 100) {
+      increase = false;
+    }
+    if (int === 0) {
+      increase = true;
     }
   }
   var swap = window.setInterval(func, interval);
 }
 
-run(10000, 3);
+run(5000);

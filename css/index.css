@@ -15,10 +15,11 @@
     rgb(63, 47, 206) 100%
   );
   background-image: url(../img/Image-1.jpg);
+  filter: saturate(0%);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 265px;
   width: 100%;
   background-position: center;
-  transition: all 0.5s;
+  transition: all 5s;
 }
