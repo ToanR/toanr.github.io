@@ -8,6 +8,12 @@
 }
 
 .header__img {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgb(63, 47, 206) 100%
+  );
   background-image: url(../img/Image-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
