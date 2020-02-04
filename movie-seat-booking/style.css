@@ -108,3 +108,17 @@ p.text {
 p.text span {
   color: #6feaf6;
 }
+p.notify-info {
+  color: #777;
+  font-size: 0.8em;
+}
+#clear {
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #3498de;
+  color: #ffffff;
+  transition: 0.2s;
+  cursor: pointer;
+}

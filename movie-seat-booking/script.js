@@ -3,6 +3,7 @@ const seats = document.querySelectorAll('.row .seat:not(.occupied)');
 const count = document.getElementById('count');
 const total = document.getElementById('total');
 const movieSelect = document.getElementById('movie');
+const clear = document.getElementById('clear');
 
 populateUI();
 
@@ -40,7 +41,7 @@ function populateUI() {
   if (selectedSeats !== null && selectedSeats.length > 0) {
     seats.forEach((seat, index) => {
       if (selectedSeats.indexOf(index) > -1) {
-        seat.classList.add('selected');
+        seat.classList.toggle('selected');
       }
     });
   }
@@ -67,6 +68,13 @@ container.addEventListener('click', e => {
     e.target.classList.toggle('selected');
     updateSelectedCount();
   }
+});
+
+clear.addEventListener('click', function() {
+  populateUI();
+  movieSelect.selectedIndex = 0;
+  localStorage.clear();
+  updateSelectedCount();
 });
 
 // Initial count and total set
