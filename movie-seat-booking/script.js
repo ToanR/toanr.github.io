@@ -4,7 +4,7 @@ const count = document.getElementById('count');
 const total = document.getElementById('total');
 const movieSelect = document.getElementById('movie');
 const clear = document.getElementById('clear');
-
+const book = document.getElementById('book');
 populateUI();
 
 let ticketPrice = +movieSelect.value;
@@ -77,5 +77,9 @@ clear.addEventListener('click', function() {
   updateSelectedCount();
 });
 
+book.addEventListener('click', function() {
+  let result = document.getElementById('result');
+  alert(result.textContent);
+});
 // Initial count and total set
 updateSelectedCount();
