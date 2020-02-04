@@ -79,7 +79,7 @@ clear.addEventListener('click', function() {
 
 book.addEventListener('click', function() {
   let result = document.getElementById('result');
-  alert(result.textContent);
+  alert(result.textContent.trim());
 });
 // Initial count and total set
 updateSelectedCount();
